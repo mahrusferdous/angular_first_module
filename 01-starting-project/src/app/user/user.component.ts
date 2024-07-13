@@ -3,7 +3,6 @@ import {
   computed,
   EventEmitter,
   Input,
-  input,
   Output,
 } from '@angular/core';
 
