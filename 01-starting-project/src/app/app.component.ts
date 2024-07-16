@@ -19,7 +19,7 @@ export class AppComponent {
     this.userId = id;
   }
 
-  get userName() {
-    return DUMMY_USERS.find((user) => user.id === this.userId)!.name;
+  get user() {
+    return DUMMY_USERS.find((user) => user.id === this.userId);
   }
 }
