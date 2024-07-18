@@ -6,18 +6,7 @@ import {
   Output,
   output,
 } from '@angular/core';
-
-type User = {
-  id: string;
-  avatar: string;
-  name: string;
-};
-
-// interface User {
-//   id: string;
-//   avatar: string;
-//   name: string;
-// }
+import { User } from './user.model';
 
 @Component({
   selector: 'app-user',
@@ -27,6 +16,7 @@ type User = {
 })
 export class UserComponent {
   @Input({ required: true }) user!: User;
+  @Input({ required: true }) selected!: boolean;
   // avatar = input.required<string>();
   // name = input.required<string>();
 
