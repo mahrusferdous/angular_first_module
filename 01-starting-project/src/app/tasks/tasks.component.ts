@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { TaskComponent } from './task/task.component';
+import { Task } from './task/task.model';
 
 @Component({
   selector: 'app-tasks',
@@ -43,5 +44,15 @@ export class TasksComponent {
 
   onCompleteTask(id: string) {
     this.tasks = this.tasks.filter((task) => task.id !== id);
+  }
+
+  onAddTask() {
+    this.tasks.push({
+      id: 't4',
+      userId: this.userId,
+      title: 'New Task',
+      summary: 'A new task to be completed',
+      dueDate: '2025-12-31',
+    });
   }
 }
