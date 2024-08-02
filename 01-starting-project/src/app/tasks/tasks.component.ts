@@ -1,6 +1,5 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { TaskComponent } from './task/task.component';
-import { Task } from './task.model';
 import { NewTaskComponent } from './new-task/new-task.component';
 import { type NewTaskData } from './task.model';
 
